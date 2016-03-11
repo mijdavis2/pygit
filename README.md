@@ -5,7 +5,7 @@ Just instantiate a pygit object with ```git = PyGit("/path/to/repo/").git``` and
 
 Returns a list.
 
-Modify to suite your purpose.
+Modify to suite your needs.
 
 ## Usage
 
