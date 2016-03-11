@@ -10,8 +10,8 @@ Modify to suite your needs.
 ## Usage
 
 ```python
->>> git = PyGit("/path/to/repo/").git
-
+>>> from pygit import PyGit
+>>> git = PyGit("/path/to/repo/")
 >>> git("checkout master")
 [ "Switched to branch 'master'", "Your branch is up-to-date with 'origin/master'."]
 
