@@ -12,11 +12,11 @@ Modify to suite your needs.
 ```python
 >>> git = PyGit("/path/to/repo/").git
 
->>> git("checkout", "master")
+>>> git("checkout master")
 [ "Switched to branch 'master'", "Your branch is up-to-date with 'origin/master'."]
 
->>> git("describe", "--tags")
+>>> git("describe --tags")
 ['1.4.0-rev23']
 
->>> git("tag", "--contains", "ex4m9le*c00m1t*h4Sh")
+>>> git("tag --contains ex4m9le*c00m1t*h4Sh")
 ['1.4.0-rev23', 'MY-SECOND-TAG-rev1']
