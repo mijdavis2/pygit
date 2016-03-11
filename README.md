@@ -1,7 +1,7 @@
 # PyGit
 Easy to use git utility for python.
 
-Just instantiate a pygit object with ```git = PyGit("/path/to/repo/").git``` and use git as you would normally.
+Just instantiate a pygit object with ```git = PyGit("/path/to/repo/")``` and use git as you would normally.
 
 Returns a list.
 
