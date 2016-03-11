@@ -27,7 +27,10 @@ class PyGit(object):
                                        "repo_directory must be a root repo directory "
                                        "of git project.".format(self.repo_directory))
 
-    def git(self, arg_string):
+    def __call__(self, *args, **kargs):
+        return self._git(args[0])
+
+    def _git(self, arg_string):
         """
         Makes using git in python nearly seamless.
 
