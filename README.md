@@ -20,7 +20,7 @@ Modify to suite your needs.
 
 >>> git("tag --contains ex4m9le*c00m1t*h4Sh")
 ['1.4.0-rev23', 'MY-SECOND-TAG-rev1']
-
+```
 
 ## License
 
