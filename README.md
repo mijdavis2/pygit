@@ -1,4 +1,6 @@
 # PyGit
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/439a70b92c114241a7c118020cb229e7)](https://www.codacy.com/app/mdavis/PyGit?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mijdavis2/PyGit&amp;utm_campaign=Badge_Grade)
+
 Easy to use git utility for python.
 
 Just instantiate a pygit object with ```git = PyGit("/path/to/repo/")``` and use git as you would normally.
