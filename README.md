@@ -5,7 +5,7 @@ Easy to use git utility for python.
 
 Just instantiate a pygit object with ```git = PyGit("/path/to/repo/")``` and use git as you would normally.
 
-Returns a list.
+Returns stdout from git as a list.
 
 Modify to suite your needs.
 
