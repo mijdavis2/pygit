@@ -7,7 +7,11 @@ Just instantiate a pygit object with ```git = PyGit("/path/to/repo/")``` and use
 
 Returns stdout from git as a list.
 
-Modify to suite your needs.
+## Install
+
+```bash
+pip install git+git://github.com/mijdavis2/pygit.git
+```
 
 ## Usage
 
