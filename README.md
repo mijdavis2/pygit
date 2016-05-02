@@ -7,12 +7,6 @@ Just instantiate a pygit object with ```git = PyGit("/path/to/repo/")``` and use
 
 Returns stdout from git as a list.
 
-## Install
-
-```bash
-pip install git+git://github.com/mijdavis2/pygit.git
-```
-
 ## Usage
 
 ```python
@@ -26,6 +20,20 @@ pip install git+git://github.com/mijdavis2/pygit.git
 
 >>> git("tag --contains ex4m9le*c00m1t*h4Sh")
 ['1.4.0-rev23', 'MY-SECOND-TAG-rev1']
+```
+
+## Install
+
+```bash
+pip install git+git://github.com/mijdavis2/pygit.git
+```
+
+## Require
+
+In requirements.txt file:
+
+```
+git+git://github.com/mijdavis2/pygit.git@0.1.1#egg=pygit
 ```
 
 ## License
