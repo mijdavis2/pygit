@@ -1,5 +1,6 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9f2c98df839545c385231b43fd1e7509)](https://www.codacy.com/app/mijdavis2/pygit?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mijdavis2/pygit&amp;utm_campaign=Badge_Grade)
+
 # pygit
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/439a70b92c114241a7c118020cb229e7)](https://www.codacy.com/app/mdavis/PyGit?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mijdavis2/PyGit&amp;utm_campaign=Badge_Grade)
 
 Easy to use git utility for python.
 
