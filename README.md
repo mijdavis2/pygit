@@ -34,7 +34,7 @@ pip install git+git://github.com/mijdavis2/pygit.git
 In requirements.txt file:
 
 ```
-git+git://github.com/mijdavis2/pygit.git@0.1.1#egg=pygit
+git+git://github.com/mijdavis2/pygit.git@0.1.3#egg=pygit
 ```
 
 ## License
