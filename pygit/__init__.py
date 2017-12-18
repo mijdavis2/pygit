@@ -29,7 +29,7 @@ class PyGit(object):
                 not os.access(self.repo_directory, os.R_OK) or \
                 not os.access(self.repo_directory, os.W_OK) or \
                 not subprocess.check_output(['git', 'rev-parse', '--git-dir'],
-                                            cwd=self.repo_directory).decode('ascii').split("\n")[0]:
+                                            cwd=self.repo_directory).decode('utf-8').split("\n")[0]:
             raise InvalidRepoDirectory("Invalid git repo directory: '{}'.\n"
                                        "repo_directory must be a root repo directory "
                                        "of git project and you must have r/w permissions.".format(self.repo_directory))
@@ -67,12 +67,12 @@ class PyGit(object):
         :returns: The stdout of the requested git command split by '\n' in the form of a list
         """
         arguments = ["git"] + arg_string.split()
-        return subprocess.check_output(arguments, cwd=self.repo_directory).decode('ascii').split("\n")
+        return subprocess.check_output(arguments, cwd=self.repo_directory).decode('utf-8').split("\n")
 
     def checkout_tag(self, tag_name):
         self._git('fetch -p')
         git_output = subprocess.check_output(["git", "ls-remote", "--tags"],
-                                             cwd=self.repo_directory).decode('ascii').split()
+                                             cwd=self.repo_directory).decode('utf-8').split()
         remote_tags = [x.replace('refs/tags/', '') for x in git_output if 'refs/tags/' in x]
         if tag_name not in remote_tags:
             raise Exception("No version tag exists in the current repo named: '{}'. ".format(tag_name))
