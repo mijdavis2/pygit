@@ -2,6 +2,11 @@
 
 # pygit
 
+> This is no longer maintained.
+Though pygit has some nice checks for instantiating the git object,
+I suggest [using sultan](https://sultan.readthedocs.io/en/latest)
+for anything subprocess related, including git commands. 
+
 Easy to use git utility for python.
 
 Just instantiate a pygit object with ```git = PyGit("/path/to/repo/")``` and use git as you would normally.
