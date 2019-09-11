@@ -37,7 +37,7 @@ class PyGit(object):
     def __call__(self, *args, **kwargs):
         return self._git(args[0])
 
-    def _git(self, arg_string):
+    def _git(self, arg_string_or_list):
         """
         Makes using git in python nearly seamless.
 
@@ -62,11 +62,15 @@ class PyGit(object):
                 ...
             ]
 
-        :param arg_string: Arguments you'd normally pass in as arguments to git
-        :type arg_string: str
+        :param arg_string_or_list: Arguments you'd normally pass in as arguments to git.  
+        :type arg_string_or_list: str or list
         :returns: The stdout of the requested git command split by '\n' in the form of a list
         """
-        arguments = ["git"] + arg_string.split()
+        if type(arg_string_or_list) is list:
+            arguments = ["git"] + arg_string_or_list
+        else:
+            arguments = ["git"] + arg_string_or_list.split()
+
         return subprocess.check_output(arguments, cwd=self.repo_directory).decode('ascii').split("\n")
 
     def checkout_tag(self, tag_name):
